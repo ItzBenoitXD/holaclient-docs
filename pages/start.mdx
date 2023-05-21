@@ -1,0 +1,139 @@
+import { Tab, Tabs } from 'nextra-theme-docs'
+import { Steps } from 'nextra-theme-docs'
+import { Callout } from 'nextra-theme-docs'
+
+# 😀 Installation 
+
+To start: use your preferred way to install HolaClient. If your not sure, select the Pterodactyl option. It's the easiest way.
+
+<Tabs items={['Pterodactyl', 'VPS/Terminal']}>
+  <Tab>
+    You have selected **Pterodactyl**. It's the easiest way to install HolaClient.
+    <Steps>
+ 
+    ### Step 1 (Pterodactyl)
+ 
+    Download the latest version of the [HolaClient egg](https://github.com/ItzBenoitXD/holaclient-installer/releases/). It's located in https://github.com/ItzBenoitXD/holaclient-installer/releases/.
+ 
+    ### Step 2 (Pterodactyl)
+ 
+    <Callout type="info" emoji="ℹ️">
+      This step is **optional** however recommended to put the egg into the correct nest/category.
+    </Callout>
+    Go to your Pterodactyl Panel admin area, click nests, and create a new nest. Put the name and description to whatever you want and save it. This step allows you organize your eggs by putting the HolaClient egg into a seperate nest to prevent the egg be in the incorrect nest (aka for example, Minecraft).
+
+    ### Step 3 (Pterodactyl)
+
+    Go back to the nests page and click on Import Egg. You should see 2 fields: **Egg File** and **Associated Nest**.
+
+    **Egg File**: Upload the egg by clicking on Browse... and select the .json egg.
+    **Associated Nest**: Put the egg in a category that matches the egg or you just created it in Step 2. In this example, I will put the egg into a nest called HolaClient.
+    Once your done uploading the egg and selected to the nest/category you want, press Import. You should now be redirected to the egg info page.
+
+    ### Step 4 (Pterodactyl)
+
+    Go to the admin area, Servers, and create a server. Put any resources you want but allocate atleast 1 port for the webserver. DO NOT CREATE THE SERVER YET. Read Step 5 first.
+	
+	### Step 5 (Pterodactyl)
+	
+	<Callout type="error" emoji="️🚫">
+      !!!DO NOT SKIP THIS STEP!!! This step is very important and you may use a old version of HolaClient if you do not follow this step.
+    </Callout>
+	Go all the way to the bottom until you see **Service Variables**. In the Version of HolaClient, put the latest version of HolaClient WITHOUT A v IN THE START! If you do not know what is the latest version of HolaClient, click on one of the options below.
+	<Tabs items={['1st option', '2nd option (recommended)']}>
+      <Tab>
+	    You choosed the 1st option.
+	    Go to https://github.com/CR072/HolaClient/releases in a another tab and look for a tag with the name **Latest** next to the version. Go back to the server creating page, and put the version in the Version of HolaClient field without including the v in the start.
+	  </Tab>
+      <Tab>
+        You choosed the 2nd option.
+		Go to https://github.com/CR072/HolaClientVersions, and click on **main** next to the number of branches. Click on **View all branches**, and you should see a list of branches. In the **Active branches**, locate the first branch that goes in top of Active branches. It should start with a v in the start. Note the version in your brain and go back to the server creation page. Put the version in the Version of HolaClient field without including the v in the start. Your now done!
+      </Tab>
+	</Tabs>
+	Now that you putted the latest version of HolaClient, go create your server and let the server do it's thing.
+	<Callout type="warning" emoji="⚠️">
+      If you encounter any errors, join our Discord in the top right corner that has the Discord logo.
+    </Callout>
+	
+	### Step 6 (Pterodactyl)
+	 
+	 Once the server finished installing, configure the settings.json and start the server!
+	 
+	### Step 7 🎉 (Pterodactyl)
+	
+	Congrats! You finished the installation part! There are still more things to configure like configure SSL, setting up Discord oAuth2, etc, but that will go to the Additional Info folder. Enjoy! 😉
+    <Callout type="warning" emoji="⚠️">
+      If you encounter any errors, join our Discord in the top right corner that has the Discord logo.
+    </Callout>
+    </Steps>
+  </Tab>
+  <Tab>
+    You have selected **VPS/Terminal**. This part is not commonly used but we still support this type of install. Let's get started!
+	This documentation expects you to use Ubuntu and have Linux knowledge.
+	<Steps>
+ 
+    ### Step 1 (VPS/Terminal)
+ 
+    Let's go create the directory where the HolaClient files go:
+    * `mkdir /var/www/holaclient`
+	* `cd /var/www/holaclient`
+ 
+    ### Step 2 (VPS/Terminal)
+ 
+    Install git and git clone the latest version of HolaClient using this command:
+	* `sudo apt -y update && sudo apt -y upgrade`
+	* `sudo apt -y install git`
+	* `git clone --quiet --single-branch --branch VERSION https://github.com/CR072/HolaClientVersions .`
+	<Callout type="info" emoji="ℹ️">
+      Replace VERSION after --branch with the latest version of HolaClient. If you don't know the latest version of HolaClient, use the tool below.
+    </Callout>
+	If you do not know the latest version of HolaClient, use this tool below:
+	<Tabs items={['1st option', '2nd option (recommended)']}>
+      <Tab>
+	    You choosed the 1st option.
+	    Go to https://github.com/CR072/HolaClient/releases in a another tab and look for a tag with the name **Latest** next to the version. Then, in the git clone command, replace VERSION with the latest version you noted in your brain including the v at the start.
+	  </Tab>
+      <Tab>
+        You choosed the 2nd option.
+		Go to https://github.com/CR072/HolaClientVersions, and click on **main** next to the number of branches. Click on **View all branches**, and you should see a list of branches. In the **Active branches**, locate the first branch that goes in top of Active branches. It should start with a v in the start. Note the version in your brain and replace VERSION with the latest version you noted in your brain including the v at the start. Your now done!
+      </Tab>
+	</Tabs>
+	<Callout type="warning" emoji="⚠️">
+      If you encounter any errors, join our Discord in the top right corner that has the Discord logo.
+    </Callout>
+	
+	### Step 3 (VPS/Terminal)
+	
+	Check if the files are there using `ls`. If there are any files, configure the settings.json using this command:
+	* `nano settings.json`
+	Once your done, press `CTRL`+`X`, `Y` then `ENTER`. This will go back to the terminal.
+	
+	### Step 4 (VPS/Terminal)
+	
+	Install node.js 17 and pm2 using theses commands:
+	* `sudo apt -y update && sudo apt -y upgrade`
+	* `curl -sL https://deb.nodesource.com/setup_17.x | sudo bash -`
+	* `sudo apt-get install -y nodejs`
+	* `node -v` (to verify node.js 17 is installed)
+	* `sudo apt-get install gcc g++ make` (development tools incase you need it)
+	* `curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -` (adds yarn's public key)
+	* `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list` (add yarn into the repository list)
+	* `sudo apt-get update && sudo apt-get install yarn` (install yarn)
+	* `npm i -g pm2`
+	
+	Once you installed node.js 17 and pm2 (along with yarn and some development tools), run theses command to start HolaClient in the background:
+	* `pm2 start index.js --name "holaclient"`
+    
+	Check if HolaClient is running on the background using `pm2 list`.
+	If it is running in the background, execute theses commands: 
+	* `pm2 startup`
+	* `pm2 save`
+	
+	### Step 5 🎉 (VPS/Terminal)
+	Congrats! You finished the installation part! There are still more things to configure like configure SSL, setting up Discord oAuth2, etc, but that will go to the Additional Info folder. Enjoy! 😉
+	<Callout type="warning" emoji="⚠️">
+      If you encounter any errors, join our Discord in the top right corner that has the Discord logo.
+    </Callout>
+    </Steps>
+  </Tab>
+</Tabs>
