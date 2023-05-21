@@ -1,23 +1,58 @@
-# Nextra Docs Template 
+<h1 align="center">Welcome to HolaClient's (new) Documentation 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1-blue.svg?cacheSeconds=2592000" />
+  <a href="https://holaclient.itzbenoitxd.ml" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/shuding/nextra-docs-template/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/ItzBenoitXD/holaclient-docs/blob/main/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/ItzBenoitXD/HolaClient's (new) Documentation" />
+  </a>
+  <a href="https://twitter.com/ItzBenoitXD" target="_blank">
+    <img alt="Twitter: ItzBenoitXD" src="https://img.shields.io/twitter/follow/ItzBenoitXD.svg?style=social" />
+  </a>
+</p>
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+> The (new) HolaClient's new documentation. Powered by [Nextra](https://nextra.site), hosted on [Vercel](https://vercel.com).
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+### 🏠 [Homepage](https://holaclient.tech)
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+### ✨ [Demo](https://holaclient.itzbenoitxd.ml)
 
-## Quick Start
+## Install
 
-Click the button to clone this repository and deploy it on Vercel:
+```sh
+pnpm i
+```
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+## Usage
 
-## Local Development
+```sh
+pnpm dev
+```
 
-First, run `pnpm i` to install the dependencies.
+## Author
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+👤 **ItzBenoitXD <itzbenoitxd@protonmail.com>**
 
-## License
+* Website: https://github.com/ItzBenoitXD
+* Twitter: [@ItzBenoitXD](https://twitter.com/ItzBenoitXD)
+* Github: [@ItzBenoitXD](https://github.com/ItzBenoitXD)
 
-This project is licensed under the MIT License.
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ItzBenoitXD/holaclient-docs/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2023 [ItzBenoitXD <itzbenoitxd@protonmail.com>](https://github.com/ItzBenoitXD).<br />
+This project is [MIT](https://github.com/ItzBenoitXD/holaclient-docs/blob/main/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
