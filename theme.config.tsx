@@ -46,8 +46,8 @@ const config: DocsThemeConfig = {
     key: 'prerelease',
 	dismissible: false,
     text: (
-      <a href="http://freebox.itzbenoitxd.ml:49152" target="_blank">
-        ⚠ If you are a normal visitor, please contact amogus#6200 on Discord or on email: itzbenoitxd@protonmail.com
+      <a href="https://holaclient.itzbenoitxd.ml" target="_blank">
+        ⚠ This documentation is not finished. Please suggest more ideas by contacting me on Discord: amogus#6200 or by using the Issues page: https://github.com/ItzBenoitXD/holaclient-docs/issues
       </a>
     )
   },
