@@ -1,7 +1,8 @@
 import Head from "next/head";
 // import "../assets/css/styles.css";
 import "@fontsource/clear-sans/500.css";
-import { Router, useRouter } from "next/router";
+import { Router, useRouter } from "next/router";import type { AppProps } from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
 import NProgress from "nprogress";
 import { useEffect } from "react";
 export default function Docs({ Component, pageProps }) {
@@ -50,3 +51,14 @@ export default function Docs({ Component, pageProps }) {
     </>
   );
 }
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
+  );
+}
+ 
+export default MyApp;
