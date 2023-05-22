@@ -10,10 +10,10 @@
     The (new) HolaClient's new documentation. Powered by Nextra, hosted on Vercel.
     <br/>
     <br/>
-    <a href="https://github.com/ItzBenoitXD/holaclient-docs"><strong>Explore the docs »</strong></a>
+    <a href="https://docs.holaclient.tech"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/ItzBenoitXD/holaclient-docs">View Demo</a>
+    <a href="https://docs.holaclient.tech">View Demo</a>
     .
     <a href="https://github.com/ItzBenoitXD/holaclient-docs/issues">Report Bug</a>
     .
@@ -126,13 +126,13 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/ItzBenoitXD/holaclient-docs/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/ItzBenoitXD/holaclient-docs/blob/main/LICENSE) for more information.
 
 ## Authors
 
 * **Shaan Khan** - *Comp Sci Student* - [Shaan Khan](https://github.com/ShaanCoding/) - *Built ReadME Template (big thanks)*
 * **ItzBenoitXD** - *Manager in @stozu* - [ItzBenoitXD](https://github.com/ItzBenoitXD) - *Made the new documentation*
-* **CR072** - ** - [CR072](https://github.com/CR072) - *Made HolaClient and the old documentation*
+* **CR072** - [CR072](https://github.com/CR072) - *Made HolaClient and the old documentation*
 
 ## Acknowledgements
 
