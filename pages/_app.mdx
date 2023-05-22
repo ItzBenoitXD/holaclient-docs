@@ -4,6 +4,7 @@ import "@fontsource/clear-sans/500.css";
 import { Router, useRouter } from "next/router";
 import NProgress from "nprogress";
 import { useEffect } from "react";
+import { Analytics } from '@vercel/analytics/react';
 export default function Docs({ Component, pageProps }) {
   NProgress.configure({ showSpinner: false });
 
@@ -34,11 +35,11 @@ export default function Docs({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:url" content="https://holaclient.itzbenoitxd.ml" />
+        <meta property="og:url" content="https://docs.holaclient.tech" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_UK" />
         <meta property="og:site_name" content="HolaClient" />
-        <link rel="canonical" href="https://holaclient.itzbenoitxd.ml" />
+        <link rel="canonical" href="https://docs.holaclient.tech" />
         <meta name="robots" content="index,follow" />
         <meta property="og:title" content="HolaClient - Documentation" />
         <meta
@@ -47,6 +48,7 @@ export default function Docs({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
+	  <Analytics />
     </>
   );
 }

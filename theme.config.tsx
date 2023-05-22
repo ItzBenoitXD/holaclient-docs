@@ -23,7 +23,7 @@ const config: DocsThemeConfig = {
             target="_blank"
             rel="noopener noreferrer"
             title="vercel.com homepage"
-            href="https://vercel.com?utm_source=holaclient.itzbenoitxd.ml"
+            href="https://vercel.com?utm_source=docs.holaclient.tech"
           >
             <span>Powered by</span>
             <svg height={20} viewBox="0 0 283 64" fill="none">
@@ -62,7 +62,7 @@ const config: DocsThemeConfig = {
     key: 'prerelease',
 	dismissible: false,
     text: (
-      <a href="https://holaclient.itzbenoitxd.ml" target="_blank">
+      <a href="https://docs.holaclient.tech" target="_blank">
         ⚠ This documentation is not finished. Please suggest more ideas by contacting me on Discord: amogus#6200 or by using the Issues page: https://github.com/ItzBenoitXD/holaclient-docs/issues
       </a>
     )
