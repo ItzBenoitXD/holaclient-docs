@@ -1,0 +1,62 @@
+import { Tab, Tabs } from 'nextra-theme-docs'
+import { Steps } from 'nextra-theme-docs'
+import { Callout } from 'nextra-theme-docs'
+
+# 🆙 Updating
+
+To start, choose the way you installed HolaClient.
+ 
+<Tabs items={['Pterodactyl', 'VPS/Terminal']}>
+  <Tab>
+    You have selected **Pterodactyl**.
+    <Steps>
+      
+    ### Step 1 (Pterodactyl)
+    
+    Save both `database.sqlite` and `settings.json` in your local PC.
+      
+    ### Step 2 (Pterodactyl)
+      
+    Remove all files and change the Version of HolaClient variable in the startup tab to the latest version of HolaClient. If you do not know what the latest version is, click on one of the options below.
+    <Tabs items={['1st option', '2nd option (recommended)']}>
+       <Tab>
+	        You choosed the 1st option.
+	        Go to https://github.com/CR072/HolaClient/releases in a another tab and look for a tag with the name **Latest** next to the version. Go back to the server creating page, and put the version in the Version of HolaClient field without including the v in the start.
+	     </Tab>
+         <Tab>
+           You choosed the 2nd option.
+		       Go to https://github.com/CR072/HolaClientVersions, and click on **main** next to the number of branches. Click on **View all branches**, and you should see a list of branches. In the **Active branches**, locate the first branch that goes in top of Active branches. It should start with a v in the start. Note the version in your brain and go back to the server creation page. Put the version in the Version of HolaClient field without including the v in the start. Your now done!
+         </Tab>
+	  </Tabs>
+     
+    ### Step 3 (Pterodactyl)
+    
+    Go to your settings tab and reinstall the server. Then, go to the file explorer and check if there's any files. If there isn't, the version you were looking for wasn't found on the versions repository. In this case, please contact our [Discord](https://discord.gg/CvqRH9TrYK).
+    
+    ### Step 4 (Pterodactyl)
+      
+    Final step! Remove the existing `settings.json` and `database.sqlite` and upload the `settings.json` and `database.sqlite` files saved on your computer. Then, start your server!
+    <Callout type="info" emoji="ℹ️">
+      If you wish, you can modify the version setting to the latest version to ensure (and i think) show the version on the admin area.
+    </Callout>
+      
+    ### Step 5 🎉 (Pterodactyl)
+      
+    Congrats! You successfully upgraded your HolaClient installation! You have reached the end. No, seriously!
+  </Tab>
+  <Tab>
+    <Callout type="info" emoji="ℹ️">
+      Since I "got to go" or gtg and I'm lazy to continue, here are the instructions copy pasted from the original docs:
+    </Callout>
+    1. Run below code to change your directory.
+            * cd /var/www/holaclient
+    2. Now Download the database.sqlite and settings.json file and run these:
+            * rm -r /var/www/holaclient/
+            * mkdir /var/www/holaclient && cd /var/www/holaclient/
+            * wget https://github.com/CR072/HolaClient/releases/download/v1.3/HolaClient.v1.3.zip
+            * apt install unzip && unzip HolaClient.v1.3.zip
+    3. Now upload your database.sqlite file into /var/www/holaclient/ directory
+    4. Now setup settings.json file according to your use.
+    5. You may also download settings.json before deleting the files and upload them now.
+  </Tab>
+</Tabs>
