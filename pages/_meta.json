@@ -1,13 +1,7 @@
 {
   "index": "🎉 Introduction",
-  "---": {
-    "type": "separator"
-  },
   "start": "😀 Installation",
   "upgrade": "🆙 Upgrading",
-  "----": {
-    "type": "separator"
-  },
   "configuredomain": "✔ Configuring a domain/SSL",
   "contact": {
     "title": "Contact ↗",
