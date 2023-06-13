@@ -1,12 +1,58 @@
 {
   "index": "🎉 Introduction",
+  "---": {
+    "type": "separator"
+  },
   "start": "😀 Installation",
   "upgrade": "🆙 Upgrading",
-  "additional-info": "Additional Info",
+  "----": {
+    "type": "separator"
+  },
+  "configuredomain": "✔ Configuring a domain/SSL",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
     "href": "https://discord.gg/CvqRH9TrYK",
     "newWindow": true
+  },
+  "holaclient": {
+    "title": "HolaClient",
+    "type": "menu",
+    "items": {
+	  "website": {
+        "title": "🌐 Website",
+        "href": "https://holaclient.tech"
+      },
+      "github": {
+        "title": "⚫ GitHub Repository",
+        "href": "https://github.com/CR072/HolaClient"
+      },
+      "contact": {
+        "title": "🔵 Contact Us",
+        "href": "https://discord.gg/CvqRH9TrYK"
+      }
+    }
+  },
+  "docs": {
+    "title": "Documentation Info",
+    "type": "menu",
+    "items": {
+	  "website": {
+        "title": "🌐 Website",
+        "href": "https://docs.holaclient.tech"
+      },
+      "github": {
+        "title": "⚫ GitHub Repository",
+        "href": "https://github.com/ItzBenoitXD/holaclient-docs"
+      },
+      "contact": {
+        "title": "👋 Say hi to me!",
+        "href": "mailto:itzbenoitxd@protonmail.com"
+      },
+	  "preview": {
+        "title": "oooo a button! what does it do?",
+        "href": "https://preview.docs.holaclient.tech"
+      }
+    }
   }
 }
