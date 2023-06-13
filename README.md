@@ -85,7 +85,7 @@ Get it here: https://git-scm.com/
 2. Clone the repository:
 
 ```sh
-git clone https://github.com/ItzBenoitXD/holaclient-docs.git
+git clone https://github.com/ItzBenoitXD/holaclient-docs.git && cd holaclient-docs
 ```
 
 3. Install ALL packages using pnpm:
