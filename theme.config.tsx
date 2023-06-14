@@ -62,7 +62,7 @@ const config: DocsThemeConfig = {
     key: 'preview',
 	dismissible: false,
     text: (
-      <a href="https://www.savethechildren.org/us/where-we-work/ukraine" target="_blank">
+      <a href="https://docs.holaclient.tech" target="_blank">
         you landed to the preview page! congrats! to go back click on this alert to exit
       </a>
     )
