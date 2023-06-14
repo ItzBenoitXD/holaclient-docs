@@ -1,3 +1,7 @@
+import { Tab, Tabs } from 'nextra-theme-docs'
+import { Steps } from 'nextra-theme-docs'
+import { Callout } from 'nextra-theme-docs'
+
 # 🎉 Introduction
  
 Welcome to HolaClient, a simple, but powerful client area for [Pterodactyl](https://pterodactyl.io)!
@@ -57,3 +61,38 @@ Credits to:
 * **CR072** for making HolaClient
 * **amogus** for making the HolaClient Installer, the Egg and the documentation
 * **Sryden** for making [Heliactyl](https://github.com/OpenHeliactyl/Heliactyl), the base of HolaClient
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Callout type="warning" emoji="⚠️">
+    your still here? if yes, go have fun with this theme color changer
+</Callout>
+<div className="mt-4 flex h-6 items-center gap-2">
+  <input
+    type="range"
+    min="0"
+    max="360"
+    step="1"
+    onChange={e => {
+      const hue = e.target.value
+      document.documentElement.style.setProperty(
+        '--nextra-primary-hue',
+        hue + 'deg'
+      )
+      document.getElementById('test-theme-hue').innerText = hue
+    }}
+  />
+  <code id="test-theme-hue" className="text-sm text-gray-500"></code>
+</div>

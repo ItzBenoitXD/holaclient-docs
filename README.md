@@ -45,9 +45,9 @@ The new documentation made by @ItzBenoitXD along with current contributors to re
 
 ## Built With
 
-* [Next.js](https://nextjs.org) 
-with the help of 
-* [Nextra](https://nextra.site) 
+* [Next.js](https://nextjs.org)
+with the help of
+* [Nextra](https://nextra.site)
 * [Nextra's Docs Theme](https://github.com/shuding/nextra-docs-template)
 
 ## Getting Started
