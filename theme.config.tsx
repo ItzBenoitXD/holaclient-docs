@@ -62,8 +62,8 @@ const config: DocsThemeConfig = {
     key: 'prerelease',
 	dismissible: false,
     text: (
-      <a href="https://docs.holaclient.tech" target="_blank">
-        ⚠ This documentation is not finished. Please suggest more ideas by contacting me on Discord: amogus#6200 or by using the Issues page: https://github.com/ItzBenoitXD/holaclient-docs/issues
+      <a href="https://www.savethechildren.org/us/where-we-work/ukraine" target="_blank">
+        Stand with Ukraine 🇺🇦  Donate Today.
       </a>
     )
   },
