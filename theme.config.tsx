@@ -59,11 +59,11 @@ const config: DocsThemeConfig = {
   docsRepositoryBase:
     "https://github.com/ItzBenoitXD/holaclient-docs/blob/main/",
   banner: {
-    key: 'prerelease',
+    key: 'preview',
 	dismissible: false,
     text: (
       <a href="https://www.savethechildren.org/us/where-we-work/ukraine" target="_blank">
-        Stand with Ukraine 🇺🇦  Donate Today.
+        you landed to the preview page! congrats! to go back click on this alert to exit
       </a>
     )
   },
