@@ -75,15 +75,19 @@ To start, use your preferred way to install HolaClient. If your not sure, select
     ### Step 1 (VPS/Terminal)
  
     Let's go create the directory where the HolaClient files go:
-    * `mkdir /var/www/holaclient`
-	* `cd /var/www/holaclient`
+    ```sh
+	mkdir /var/www/holaclient`
+	cd /var/www/holaclient
+    ```
  
     ### Step 2 (VPS/Terminal)
  
     Install git and git clone the latest version of HolaClient using this command:
-	* `sudo apt -y update && sudo apt -y upgrade`
-	* `sudo apt -y install git`
-	* `git clone --quiet --single-branch --branch VERSION https://github.com/CR072/HolaClientVersions .`
+	```sh
+	sudo apt -y update && sudo apt -y upgrade
+	sudo apt -y install git
+	git clone --quiet --single-branch --branch VERSION https://github.com/CR072/HolaClientVersions .
+	```
 	<Callout type="info" emoji="ℹ️">
       Replace VERSION after --branch with the latest version of HolaClient. If you don't know the latest version of HolaClient, use the tool below.
     </Callout>
@@ -105,30 +109,39 @@ To start, use your preferred way to install HolaClient. If your not sure, select
 	### Step 3 (VPS/Terminal)
 	
 	Check if the files are there using `ls`. If there are any files, configure the settings.json using this command:
-	* `nano settings.json`
+	```sh
+	nano settings.json`
+	```
 	
 	Once your done, press `CTRL`+`X`, `Y` then `ENTER`. This will go back to the terminal.
 	
 	### Step 4 (VPS/Terminal)
 	
 	Install node.js 17 and pm2 using theses commands:
-	* `sudo apt -y update && sudo apt -y upgrade`
-	* `curl -sL https://deb.nodesource.com/setup_17.x | sudo bash -`
-	* `sudo apt-get install -y nodejs`
-	* `node -v` (to verify node.js 17 is installed)
-	* `sudo apt-get install gcc g++ make` (development tools incase you need it)
-	* `curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -` (adds yarn's public key)
-	* `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list` (add yarn into the repository list)
-	* `sudo apt-get update && sudo apt-get install yarn` (install yarn)
-	* `npm i -g pm2`
+	```sh
+	sudo apt -y update && sudo apt -y upgrade
 	
-	Once you installed node.js 17 and pm2 (along with yarn and some development tools), run theses command to start HolaClient in the background:
-	* `pm2 start index.js --name "holaclient"`
-    
+	curl -sL https://deb.nodesource.com/setup_17.x | sudo bash -
+	
+	sudo apt-get install -y nodejs gcc g++ make
+	
+	node -v
+	
+	curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+	echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+	sudo apt-get update && sudo apt-get install yarn
+	
+	npm i
+    npm i -g pm2
+	
+	pm2 start index.js --name "holaclient"
+	```
 	Check if HolaClient is running on the background using `pm2 list`.
 	If it is running in the background, execute theses commands: 
-	* `pm2 startup`
-	* `pm2 save`
+	```sh
+	pm2 startup
+	pm2 save
+	```
 	
 	### Step 5 🎉 (VPS/Terminal)
 	Congrats! You finished the installation part! There are still more things to configure like configure SSL, setting up Discord oAuth2, etc, but that will go to another category. Enjoy! 😉
