@@ -36,7 +36,7 @@ const config: DocsThemeConfig = {
           </a>
         </div>
         <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} HolaClient
+          © {new Date().getFullYear()} HolaClient, made with ❤ by amogus
         </p>
       </div>
     )
@@ -58,15 +58,6 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase:
     "https://github.com/ItzBenoitXD/holaclient-docs/blob/main/",
-  banner: {
-    key: 'preview',
-	dismissible: false,
-    text: (
-      <a href="https://docs.holaclient.tech" target="_blank">
-        you landed to the preview page! congrats! to go back click on this alert to exit
-      </a>
-    )
-  },
 };
 
 export default config;

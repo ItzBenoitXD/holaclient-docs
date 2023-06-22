@@ -51,18 +51,21 @@ To start, choose the way you installed HolaClient.
       
     ### Step 1 (VPS/Terminal)
     
-	Download both database.sqlite and settings.json from the VPS to your local PC.
+	Download both `database.sqlite` and `settings.json` from the VPS to your local PC.
 	
 	### Step 2 (VPS/Terminal)
 	
 	Execute theses commands to upgrade HolaClient:
-	        * `pm2 stop holaclient`
-            * `rm -rf /var/www/holaclient/` (remove old HolaClient files)
-            * `mkdir /var/www/holaclient && cd /var/www/holaclient/` (recreate the HolaClient folder)
-            * `git clone --quiet --single-branch --branch VERSION https://github.com/CR072/HolaClientVersions .` (download HolaClient files, replace VERSION after --branch with your version of choice STARTING WITH A v! Use the tool below if you don't know the latest version.)
+	```sh
+	pm2 stop holaclient
+    rm -rf /var/www/holaclient/
+	mkdir /var/www/holaclient && cd /var/www/holaclient/
+    git clone --quiet --single-branch --branch VERSION https://github.com/CR072/HolaClientVersions .
+	npm i
+	```
 	
 	<Callout type="warning" emoji="⚠️">
-      If you do not know the latest version of HolaClient, use this tool below.
+       Replace VERSION after --branch with your version of choice STARTING WITH A v! If you do not know the latest version of HolaClient, use this tool below.
     </Callout>
 	<Tabs items={['1st option', '2nd option (recommended)']}>
       <Tab>
@@ -88,11 +91,15 @@ To start, choose the way you installed HolaClient.
     ### Step 4 (VPS/Terminal)
 	
 	Final step! Start HolaClient using this command:
-	* `pm2 start holaclient`
+	```sh
+	pm2 start holaclient
+	```
 	
 	Check if HolaClient is running on the background using `pm2 list` and `pm2 monit`. If it is running in the background, execute theses commands:
-	* `pm2 startup`
-	* `pm2 save`
+	```sh
+	pm2 startup
+	pm2 save
+	```
 	<Callout type="warning" emoji="⚠️">
       If you started HolaClient but can't access it, do `pm2 monit`, locate the holaclient process, get the error you're facing and either join our Discord server or submit a GitHub issue in https://github.com/CR072/HolaClient/issues.
     </Callout>
