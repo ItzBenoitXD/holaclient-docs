@@ -26,8 +26,8 @@
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "nprogress": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "latest",
+    "react-dom": "latest",
     "@vercel/analytics": "latest"
   },
   "devDependencies": {
